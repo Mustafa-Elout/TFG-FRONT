@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "AllertaStencil";
+    src: url("./assets/Fonts/AllertaStencil-Regular.ttf");
+}
+
+html, body { 
+    height: 100%;
+}
+body { 
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.buscar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buscarInput{
+    width: 80%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

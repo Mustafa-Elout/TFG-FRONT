@@ -1,0 +1,27 @@
+<div class="colorinchis">
+    <form class="example-container" [formGroup]="form" #frmLogin="ngForm" (ngSubmit)="iniciarSession()">
+
+        <h1>ACCESO</h1>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Usuario" required formControlName="user">
+        </mat-form-field>
+    
+        <mat-form-field class="example-full-width">
+          <mat-label>Contraseña</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" required>
+          <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+    
+        <button id="boton-login" mat-stroked-button color="accent" class="btn-block" type="submit">
+            ACCEDER
+        </button>
+    
+        <div id="nuevoUsuario">
+            <button id="nuevoUsuarioButton" type="button" mat-stroked-button color="accent" class="btn-block" routerLink='/registrar'>NUEVO USUARIO</button>
+        </div>
+
+    </form>
+
+</div>

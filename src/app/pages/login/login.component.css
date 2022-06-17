@@ -1,0 +1,74 @@
+.colorinchis {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 150% 150%;
+    animation: gradient 12s ease infinite;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.example-container {
+    position: relative;
+    top: 20%;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.example-container>* {
+    width: 100%;
+}
+
+.invalido {
+    color: red;
+}
+
+#boton-login {
+    font-size: 2vw;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+h1 {
+    font-family: "AllertaStencil";
+    color: #222222;
+    margin-bottom: 10%;
+    font-size: 6vw;
+}
+
+.mat-form-field{
+    font-size: 1vw;
+}
+
+#nuevoUsuario{
+    padding-top:5%;
+}
+
+#nuevoUsuarioButton{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 2vw;
+    width: 100%;
+}

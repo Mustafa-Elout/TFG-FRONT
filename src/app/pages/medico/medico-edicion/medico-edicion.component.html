@@ -1,0 +1,34 @@
+<div>
+    <h1 mat-dialog-title>MEDICO</h1>
+    <div mat-dialog-content>
+        <div style="display: flex;flex-direction: column; margin:1rem auto; max-width: 600px; padding: 1rem;">
+
+            <mat-form-field>
+                <input matInput *ngIf="edicion" [(ngModel)]="medico.nombres" type="text" placeholder="Nombre">
+                <input matInput *ngIf="!edicion" [(ngModel)]="nombres" type="text" placeholder="Nombre">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput *ngIf="edicion" [(ngModel)]="medico.apellidos" type="text" placeholder="Apellidos">
+                <input matInput *ngIf="!edicion" [(ngModel)]="apellidos" type="text" placeholder="Apellidos">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput *ngIf="edicion" [(ngModel)]="medico.cedula" type="text" placeholder="Cedula">
+                <input matInput *ngIf="!edicion" [(ngModel)]="cedula" type="text" placeholder="Cedula">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput *ngIf="edicion" [(ngModel)]="medico.fotoUrl" type="text" placeholder="Foto URL">
+                <input matInput *ngIf="!edicion" [(ngModel)]="fotoUrl" type="text" placeholder="fotoUrl">
+            </mat-form-field>
+
+            <img *ngIf="edicion" src="{{medico.fotoUrl}}" alt="">
+
+        </div>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="cancelar()">Cancelar</button>
+        <button mat-button [mat-dialog-close]="data" cdkFocusInitial (click)="agregar()">Confirmar</button>
+    </div>
+</div>

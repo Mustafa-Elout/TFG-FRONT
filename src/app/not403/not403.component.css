@@ -1,0 +1,46 @@
+error-message{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 5%;
+  font-size: 6vw;
+  color: white;
+}
+a{
+  text-align: center;
+  font-size: 4vw;
+}
+a:visited{
+  color: rgb(2, 255, 73);
+}
+p{
+  text-align: center;
+  color: white;
+  margin-bottom: 5%;
+  font-size: 2vw;
+}
+
+.colorinchis {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-45deg, #f20707, #0d00ff, #f20707, #0d00ff);
+  background-size: 150% 150%;
+  animation: gradient 12s ease infinite;
+  
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 100%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 100%;
+  }
+}
